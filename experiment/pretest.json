@@ -2,37 +2,59 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Frequency where the nyquist plots intersect negative part of real axis is referred to as",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Gain Margin",
+        "b": "Phase Margin",
+        "c": "Phase cross-over frequency",
+        "d": "Gain cross-over frequency"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
+
+      "correctAnswer": "c",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "What is the basic difference between polar plot and nyquist plot?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "Number of poles",
+        "b": "Number of zeroes",
+        "c": "Range of frequencies handled",
+        "d": "Both (a) and (b)"
       },
       "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is varied to plot nyquist plot?",
+      "answers": {
+        "a": "Poles",
+        "b": "Frequency",
+        "c": "Zeroes",
+        "d": "Time"
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+        {
+      "question": "The critical point in Nyquist plot is",
+      "answers": {
+        "a": "(1,0)",
+        "b": "(0,1)",
+        "c": "(0,-1)",
+        "d": "(-1,0)"
+      },
+      "correctAnswer": "d",
+      "difficulty": "beginner"
+    },
+        {
+      "question": "In a type 2 system, the magnitude of polar plot at w = 0 is ",
+      "answers": {
+        "a": "infinity",
+        "b": "zero",
+        "c": "unity",
+        "d": "unpredictable"
+      },
+      "correctAnswer": "a",
       "difficulty": "beginner"
     }
   ]
