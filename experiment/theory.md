@@ -55,6 +55,6 @@ $$ { D(s) = 1+G(s)H(s)} $$
 we plot only the function G(𝑠)H(𝑠) and count encirclement of the Nyquist plot of around the point
 (-1+j0) , so that the modified Nyquist criterion has the following form. The number of unstable
 closed-loop poles (Z) is equal to the number of unstable open-loop poles (P) plus the number of
-encirclements (N) of the point (=1+j0),
+encirclements (N) of the point (-1+j0),
 
 $$ {Z = N + P}  $$
