@@ -296,7 +296,7 @@ var kpi,essi,esss,kp;
 
  function nyquist(c0, d0, p0, q0, r0) {
    
-    for (let i=-50; i<=50; i=i+0.01){
+    for (let i=-100; i<=100; i=i+0.005){
         re_nyq.push(real(c0,d0,p0,q0,r0,i).toFixed(2));
         img_nyq.push(imaginary(c0,d0,p0,q0,r0,i));    
         lab_final.push(i.toFixed(2));   
