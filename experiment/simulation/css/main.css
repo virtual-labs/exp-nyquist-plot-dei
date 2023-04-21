@@ -58,6 +58,7 @@ body {
     height: 70vh;
     background-color: aliceblue;
     padding: 10px 0;
+    overflow-y:scroll;
 }
 
 .numerator {
