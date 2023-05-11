@@ -17,10 +17,6 @@ var eqn;
 var kpi,essi,esss,kp;
 var conclusion = "";
  
-//  var conclusion = "<br>All the poles entered here are in the left-half plane. So, the number of unstable poles of open-loop are zero. <br>";
-//  conclusion = conclusion+"<br> Similarly, the zeros entered are in the left-half plane, so the number of unstable cosed-loop poles is zero. So, the encirclement is zero. <br> "
-
-
 
  function addval() {
      lab = [];
@@ -214,32 +210,6 @@ else if(p==0 && q==0 && r==0)
           }
 
 
-
-        //  var numerator = "$${\\frac{ ";
-        //  if (c != 0)
-        //      numerator = numerator + c + "s";
-        //  if (d != 0)
-        //      if (c != 0)
-        //          numerator = numerator + " + " + d;
-        //      else
-        //          numerator = numerator + d;
-        //  numerator = numerator + "}";
-        //  var denominator = "{";
-        //  if (p != 0)
-        //      denominator = denominator + p + "s^2";
-        //  if (q != 0)
-        //      if (p != 0)
-        //          denominator = denominator + " + " + q + "s";
-        //      else
-        //          denominator = denominator + q + "s";
-        //  if (r != 0)
-        //      if (q != 0)
-        //          denominator = denominator + " + " + r;
-        //      else
-        //          denominator = denominator + r;
-        //  denominator = denominator + "}} $$";
-        //  var eqn = numerator+denominator;
-
         var numerator = "$${\\frac{";
 if(a!=0)
 numerator=numerator+a+"s^2";
@@ -324,11 +294,11 @@ denominator2=denominator2+"}}$$";
          var eq = numerator+denominator2;
 
          document.getElementById("out2").innerHTML = eq;
-         output = output + "&emsp;&emsp;    Z (Open loop poles in RHP) = "+ co+" .<br><br>";
+         output = output + "&emsp;&emsp;    P (Open loop poles in Right-Half Plane) = "+ co+" .<br><br>";
          document.getElementById("out3").innerHTML = output;
-         output2 = output2 + "&emsp;&emsp;  P (Closed Loop Poles in RHP) = "+ cc+" <br><br>";
+         output2 = output2 + "&emsp;&emsp;  Z (Closed Loop Poles in Right-Half Plane) = "+ cc+" <br><br>";
          document.getElementById("out4").innerHTML = output2;
-         var output3 = "<br>&emsp;&emsp;  N = Z - P = "+co+" - "+cc+" = "+(co-cc)+".<br><br>";
+         var output3 = "<br>&emsp;&emsp;  N = Z - P = "+cc+" - "+co+" = "+(cc-co)+".<br><br>";
          document.getElementById("out5").innerHTML = output3;
          document.getElementById("tabm1").innerHTML = (d/r).toFixed(2);
          document.getElementById("tabm2").innerHTML = magnitude(c,d,p,q,r,-1000).toFixed(2);
@@ -337,24 +307,21 @@ denominator2=denominator2+"}}$$";
          document.getElementById("taba2").innerHTML = angle(c,d,p,q,r,-1000).toFixed(2);
          document.getElementById("taba3").innerHTML = angle(c,d,p,q,r,1000).toFixed(2);
          
+         if (co==0)
+         conclusion = "1. The poles of open loop control system lie in the left half of s-plane. Therefore, open loop control system is stable. <br><br>";
+         else if(co==1)
+         conclusion = "1. A pole of open loop control system lies in the right half of s-palne. Therefore, the open loop control system is unstable. <br><br>";
+         else
+         conclusion = "1. Two poles of open loop control system lie in the right half of s-plane. Therefore, the open loop control system is unstable. <br><br>";
 
-         if ((co-cc)==0)
-conclusion = "The critical point has zero encirclement. <br><br>Thus, the system is stable and there is no unstable pole of the system.<br>";
-else if ((co-cc)==-1)
-conclusion = "There is only one clockwise encirclement about the critical point. <br><br> The system maybe unstable and there is one unstable pole of the system. <br>";
-else if ((co-cc)==-2)
-conclusion = "There are two clockwise encirclements about the critical point. <br><br> The system maybe unstable with two unstable poles of the system.";
-else if ((co-cc)==1)
-conclusion = "There is only one anti-clockwise encirclement about the critical point. <br><br> The system maybe unstable and there is one unstable pole of the system. <br>";
-else if ((co-cc)==2)
-conclusion = "There are two anti-clockwise encirclements about the critical point. <br><br> The system maybe unstable with two unstable poles of the system.";
-         
-         
-        //document.getElementById("tanswer").innerHTML ="<br> Step Response in time domain:"+ eqn +"<br>Kp:"+kp.toFixed(2)+"<br>ess:"+esss.toFixed(2)+ "<br><br>Impulse Response in time domain:"+eqn+"<br>K:"+kpi.toFixed(2)+"<br>ess:"+essi.toFixed(2);
+         if ((cc-co)==0)
+         conclusion = conclusion + "2. The encirclement about the critical point (-1+j0) is zero. Therefore, the closed loop control system is stable."
+         else if ((cc-co)==1 || (cc-co)==-1)
+         conclusion = conclusion + "2. The encirclement about the criticl point (-1+j0) is one. Therefore, the closed loop control system is unstable."
+         else
+         conclusion = conclusion + "2. The encirclement about the critical point (-1+j0) is two. Therefore, the closed loop control system is unstable.";
          var j, k;
-
-         
-         
+        
          var ms = window.matchMedia("(max-width:950px)");
          cwidth(ms);
          ms.addListener(cwidth);
