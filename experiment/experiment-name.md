@@ -1,2 +1,1 @@
-
-Study the nyquist plot of a control system.
+### Determine the nyquist plot of the given transfer function
