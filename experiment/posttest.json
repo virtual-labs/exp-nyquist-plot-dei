@@ -2,35 +2,58 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "How do you comment on a stability of a Nyquist plot?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Greater the gain margin, less stable the system",
+        "b": "Lesser the gain margin, less stable the system",
+        "c": "Greater the gain margin, more stable the system",
+        "d": "Lesser the gain margin, more stable the system"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Nyquist plots are the continuation of ______ for finding the stability of the closed loop control systems?",
+      "answers": {
+        "a": "Polar Plots",
+        "b": "Bode PLots",
+        "c": "Root Locus",
+        "d": "None of the above"
       },
+      
       "correctAnswer": "a",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "Nyquist plots a contour comprised of?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Positive frequencies",
+        "b": "Negative frequencies",
+        "c": "Both positive and negative frequencies ",
+        "d": "None of the above"
       },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "The frequency in the case of the Nyquist plot varies from?",
+      "answers": {
+        "a": "infinity to -infinity",
+        "b": "-infinity to infinity",
+        "c": "zero to infinity",
+        "d": "zero to -infinity"
+      },
+      "correctAnswer": "b",
+          "difficulty": "beginner"
+    },
+    {
+      "question": "If the critical point (-1+0j) lies outside the encirclement, then the closed loop control system is?",
+      "answers": {
+        "a": "Unstable",
+        "b": "Marginally Stable",
+        "c": "Absolutely Stable",
+        "d": "None of the above"
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
