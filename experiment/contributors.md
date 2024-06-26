@@ -1,10 +1,6 @@
-<!-- Remove all lines above this line before making changes to the file -->
-### Subject Matter Experts
-| SNo. | Name | Email | Institute |
-| :---: | :---: | :---: | :---: |
-| 1 | Dr. Rajeev Kumar Chauhan | rajeevchr_nitj@yahoo.com | DEI, Agra |
+### Contributors
 
-### Developers
-| SNo. | Name | Email | Institute |
-| :---: | :---: | :---: | :---: |
-| 1 | Ansh Mathur | mathuransh02@gmail.com | DEI, Agra |
+Sr No | Name | Faculty or Student | Department| Institute | Email id
+:--|:--|:--|:--|:--|:--|
+1 | Dr. Rajeev Kumar Chauhan | Faculty | Department of Electrical Engineering | Dayalbagh Educational Institute (Deemed to be University) Agra | rajeevchr_nitj@yahoo.com
+2 | Mr. Ansh Mathur | Intern | Department of Electrical Engineering | Dayalbagh Educational Institute (Deemed to be University) Agra | mathuransh02@gmail.com
