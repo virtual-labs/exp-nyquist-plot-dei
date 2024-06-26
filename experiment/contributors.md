@@ -1,4 +1,4 @@
-### Contributors List
+### Contributors
 
 Sr No | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
