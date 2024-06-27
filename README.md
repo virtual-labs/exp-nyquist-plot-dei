@@ -21,4 +21,4 @@ Fill a brief description of this experiment here
 SrNo | Name | Faculty or Student | Department| Institute | Email id
 :--|:--|:--|:--|:--|:--|
 1 | Dr. Rajeev Kumar Chauhan | Faculty | Department of Electrical Engineering | Dayalbagh Educational Institute Agra | rkchauhan@dei.ac.in
-2 | . | . | . | . | .
+2 | Mr. Ansh Mathur | Intern | Department of Electrical Engineering | Dayalbagh Educational Institute Agra | mathuransh02@gmail.com
